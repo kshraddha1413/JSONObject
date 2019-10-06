@@ -25,3 +25,16 @@ It is used to invoke http request
 3.1) This library is used to create REST api
 3.2) We need to use following annotations:
 
+
+**Create RestAPI**
+
+1) Configure Tomcat in Eclipse
+2) Create Web DynamicProject
+2.a)@POST, @GET, @DELETE, @PUT
+2.b)@Path("add") - 
+	@Consumes({MediaType.APPLICATION_JSON})
+	@Produces({MediaType.APPLICATION_JSON})
+  MethodName(@PathParam("id") int id) in case of @Path("delete/{id}")
+3) Run Dynamic porject as "Run on Server" option so it will run on tomcat
+4) Test Rest api endpoints using Postman
+
